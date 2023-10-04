@@ -594,10 +594,11 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 320px;
   border-left: 1px solid #D9FFF5;
   transform: translateX(150%);
-  transition: 0.5s ease; }
-  @media (min-width: 1230px) {
+  transition: 0.5s ease;
+  max-width: 440px; }
+  @media (max-width: 480px) {
     .feedback {
-      max-width: 440px; } }
+      width: 100vw; } }
   .feedback .active__feedback {
     transform: translateX(0%);
     transition: 0.5s ease; }
@@ -865,7 +866,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: z-index 0.3s, opacity 0.5s ease; }
 
 .requere-call {
-  max-width: 320px;
+  max-width: 440px;
   background-color: #FFF;
   height: 100%;
   border-left: 1px solid #D9FFF5;
@@ -875,9 +876,9 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 7;
   transition: 0.5s ease;
   transform: translateX(150%); }
-  @media (min-width: 1230px) {
+  @media (max-width: 480px) {
     .requere-call {
-      max-width: 440px; } }
+      width: 100vw; } }
   .requere-call .requere-call__container {
     padding: 1.5em;
     position: relative; }

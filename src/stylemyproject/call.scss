@@ -1,0 +1,110 @@
+.blur {
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.9;
+  background: $menucolor;
+  position: fixed;
+  z-index: -1;
+  transition: z-index 0.3s, opacity 0.5s ease;
+}
+.requere-call {
+  max-width: 440px;
+  @media (max-width: 480px) {
+    max-width: 100vw;
+  }
+  background-color: $menucolor;
+  height: 100%;
+  border-left: 1px solid $borderbottomcolor;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 7;
+  transition: 0.5s ease;
+  transform: translateX(150%);
+
+  .requere-call__container {
+    padding: 1.5em;
+    position: relative;
+    .requere-call__btn-close {
+      background-color: $menucolor;
+      margin-bottom: 32px;
+      @media (min-width: 1230px) {
+        position: absolute;
+        top: 17px;
+        left: -80px;
+      }
+    }
+    .requere-call__head {
+      margin-bottom: 24px;
+      .requere-call__title {
+        color: $namecolor;
+        font-family: 'TT Lakes Bold';
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px; /* 133.333% */
+        letter-spacing: -0.6px;
+      }
+    }
+    .requere-call__form {
+      margin-bottom: 16px;
+      .requere-call__tel {
+        border-radius: 8px;
+        border: 1px solid #eaeaea;
+        background: #fff;
+        height: 48px;
+        width: 100%;
+        padding-left: 16px;
+      }
+      .requere-call__tel::placeholder {
+        color: #b5b6bc;
+        font-family: 'TT Lakes Medium';
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px; /* 150% */
+        letter-spacing: -0.2px;
+      }
+    }
+    .feedback__info {
+      color: #7e7e82;
+      font-family: 'TT Lakes Medium';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 16px; /* 114.286% */
+      margin-bottom: 23px;
+      span {
+        color: #ff3e79;
+      }
+    }
+    .feedback__btn {
+      padding: 4px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 2px;
+      margin-left: auto;
+      width: 136px;
+      text-align: right;
+      font-family: 'TT Lakes Bold';
+      border-radius: 16px;
+      font-size: 12px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 24px; /* 200% */
+      letter-spacing: -0.15px;
+      text-transform: uppercase;
+      color: #fff;
+      background-color: #ff3e79;
+    }
+  }
+}
+.active__requere {
+  transform: translateX(0%);
+  transition: 0.5s ease;
+}
+.active__blur {
+  z-index: 6;
+  transition: 0.5s;
+}

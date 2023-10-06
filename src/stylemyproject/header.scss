@@ -1,0 +1,12 @@
+.header{
+    width: 100%;
+    height: 88px;
+    .header__wrapper{
+        background-color: $menucolor;
+        padding: 1.7em 1.5em;
+        border-bottom: 1px solid $borderbottomcolor;
+    }
+    @media(min-width : 1230px){
+        display: none;
+    }
+}

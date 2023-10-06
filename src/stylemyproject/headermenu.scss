@@ -1,0 +1,52 @@
+.header__menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .menu__left{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap:2vw;
+        @media ( min-width : 320px) and (max-width : 480px) {
+           gap:5vw;
+        }
+    }
+    .menu__center{
+        display: flex;
+        align-items: center;
+        margin-left:auto;
+        gap:2vw;
+        @media ( min-width : 320px) and (max-width : 480px) {
+              display: none;
+          }
+    }
+    .menu__right{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:2vw;
+        margin-left: 20px;
+        @media ( min-width : 320px) and (max-width : 480px) {
+            gap:5vw;
+        }
+    }
+    .menu__btn{
+        background-color: $menucolor;
+    }
+    .menu__btn:hover{
+        transform: scale(1.5);
+        opacity:0.8;
+        transition: 0.5s;
+    }
+    .menu__divider{
+        width: 2px;
+        height: 32px;
+        background-color:$bordercolor;
+        border-radius: 1px;
+    }
+    .menu__divider--left{
+        @media( min-width : 320px) and (max-width : 480px){display: none;}
+    }
+}
+
+

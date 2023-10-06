@@ -1,0 +1,22 @@
+.wrapper {
+  position: relative;
+  background: $bodycolor;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+  @media (min-width: 1230px) {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+  .content-box {
+    z-index: 4;
+    background: $bodycolor;
+    .main {
+      background: $bodycolor;
+      .main__wrapper {
+        background: $bodycolor;
+      }
+    }
+  }
+}

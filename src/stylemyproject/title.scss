@@ -1,0 +1,60 @@
+.title{
+    padding-top: 24px;
+    padding-right: 24px;
+    padding-bottom: 3vw;
+    .title__name{
+        display: flex;
+        align-items: center;
+        
+        .title__hightlighter{
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            width: 4px;
+            height: 40px;
+            background-color: $higlighter;
+            margin-right: 1vw;
+        }
+        .title__name--text{
+            color: $namecolor;
+            font-family: 'TT Lakes Bold';
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 40px; 
+            letter-spacing: -0.6px;
+            white-space: nowrap;
+        }
+        .title__btn-group{
+            margin-left: auto;
+            display: flex;
+            align-items: center;
+            @media(min-width:320px) and (max-width:1230px){
+                display:none;
+            }
+        .title__btn{
+            display: flex;
+            align-items: center;
+            background-color: $bodycolor;
+            gap:8px;
+            margin-left: 32px;
+            .title__btn--text{
+                color: $namecolor;
+                text-align: right;
+                font-family: 'TT Lakes Medium';  
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 24px; 
+                letter-spacing: -0.2px;
+                white-space: nowrap;
+                }
+            
+            }
+        }
+        .title__btn:hover{
+                opacity: 0.8;
+                transform: scale(1.2);
+                transition:0.5s;
+            }
+    }
+}

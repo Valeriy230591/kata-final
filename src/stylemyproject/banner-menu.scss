@@ -1,0 +1,35 @@
+.banner__menu{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    padding-left:1.5em;
+    gap:1.5em;
+    margin-bottom: 1.5vh;
+    @media(min-width:992px){
+        flex-wrap: wrap;
+    }
+    .banner__menu_btn{
+        padding: 8px 10px 8px 16px;
+        background-color: $bodycolor;
+        border-radius: 6px;
+        border: 2px solid transparent;
+        .banner__menu_btn--text{
+            white-space: nowrap;
+            color: #7E7E82;
+            font-family: 'TT Lakes Medium';  
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 150% */
+            letter-spacing: -0.2px;
+        }
+    }
+    .banner__menu_btn:hover{
+        background-color: $menucolor;
+        border-color:#B8FFEC ;
+    }
+}
+.banner__menu::-webkit-scrollbar{
+    width: 0;
+  }

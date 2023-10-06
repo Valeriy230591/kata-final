@@ -1,0 +1,88 @@
+.service {
+  background-color: $bodycolor;
+  .service__header {
+    padding: 1.7em;
+    background-color: $menucolor;
+    border-top: 1px solid $borderbottomcolor;
+    .service__title {
+      color: $textcolor;
+      font-family: 'TT Lakes Regular';
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px; /* 150% */
+      letter-spacing: -0.2px;
+      text-transform: uppercase;
+    }
+  }
+  .service__slider {
+    padding: 16px 1.5em;
+    height: 220px;
+    background-color: $bodycolor;
+    @media (min-width: 481px) {
+      height: 180px;
+    }
+    .service__slider--wrapper {
+      display: flex;
+      align-items: center;
+      flex-wrap: nowrap;
+      gap: 3vw;
+      margin-bottom: 30px;
+      @media (min-width: 481px) {
+        flex-wrap: wrap;
+      }
+      .service__slide {
+        margin: 0;
+        padding: 0;
+        width: 224px;
+        height: 160px;
+
+        .card-service {
+          height: 160px;
+          display: flex;
+          justify-content: space-between;
+          gap: 9px;
+          padding: 16px;
+          border-radius: 6px;
+          border: 1px solid $bordercolor;
+          background-color: $menucolor;
+          .card-service__name {
+            align-self: start;
+            color: $namecolor;
+            font-family: 'TT Lakes Medium';
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 24px; /* 150% */
+            letter-spacing: -0.2px;
+          }
+          .card-service__link {
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+    .service__pagination {
+      @media (min-width: 480px) {
+        display: none;
+      }
+    }
+  }
+  .button__show-more {
+    margin-left: 1.7em;
+    background-color: $bodycolor;
+    display: flex;
+    align-items: center;
+    color: $namecolor;
+    font-family: 'TT Lakes Medium';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
+    margin-bottom: 2vw;
+    @media (max-width: 481px) {
+      display: none;
+    }
+  }
+}

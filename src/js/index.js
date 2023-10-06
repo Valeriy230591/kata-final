@@ -1,0 +1,8 @@
+import '../scss/style.scss'
+import './show-more'
+import './read-more'
+import './swiper-brands'
+import './show-more-service'
+import './service-slider'
+import './aside'
+import './slider-price'

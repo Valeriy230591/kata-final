@@ -1,0 +1,43 @@
+$bodycolor:#F8F8F8;
+$menucolor:#FFF;
+$namecolor:#1B1C21;
+$higlighter:#41F6D7;
+$bordercolor:#EAEAEA;
+$borderbottomcolor:#D9FFF5;
+$textcolor:#7E7E82;
+body{
+  background-color: $bodycolor;
+}
+
+@font-face {
+  font-family: 'TT Lakes Regular';
+  src: url('../fonts/TTLakes-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  }
+  @font-face {
+    font-family: 'TT Lakes Medium';  
+    src:url('../fonts/TTLakes-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+      font-family: 'TT Lakes Bold';
+      src:url('../fonts/TTLakes-Bold.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      }
+@import'./normalize.scss';
+@import'../stylemyproject/wrpapper.scss';
+@import'../stylemyproject/header.scss';
+@import'../stylemyproject/headermenu.scss';
+@import'../stylemyproject/title.scss';
+@import'../stylemyproject/banner-menu.scss';
+@import'../stylemyproject/article.scss';
+@import'../stylemyproject/swiper-brands.scss';
+@import'../stylemyproject/service.scss';
+@import'../stylemyproject/aside.scss';
+@import'../stylemyproject/feedback.scss';
+@import'../stylemyproject/call.scss';
+@import'../stylemyproject/price.scss';
+@import'../stylemyproject/footer.scss';
